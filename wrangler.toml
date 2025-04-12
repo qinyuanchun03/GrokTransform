@@ -1,0 +1,28 @@
+name = "xai-api-proxy"
+main = "src/index.ts"
+compatibility_date = "2023-12-01"
+
+# Configure your account ID and zone ID
+# account_id = "your-cloudflare-account-id"
+# zone_id = "your-cloudflare-zone-id"
+
+# Routes - Uncomment and modify these lines to match your domain
+# routes = [
+#   { pattern = "api-grok.domain.com/*", zone_name = "domain.com" }
+# ]
+
+# Custom domain - Uncomment and modify this line to match your domain
+# workers_dev = false
+# custom_domain = "api-grok.domain.com"
+
+# No environment variables required
+# This is a pure proxy that forwards all requests without modification
+
+# Development environment
+[dev]
+port = 8787
+local_protocol = "http"
+
+# Production environment
+[env.production]
+# Add production-specific settings here
